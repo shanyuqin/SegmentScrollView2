@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIScrollView (SegmentPage)
 
+@property (nonatomic, assign) CGFloat segPage_lastOffsetY;
+
+/**
+ MenuView 滑到后边的item时希望menuView的位置能够适配当前的屏幕位置。
+ */
+- (void)scrollToSuitable:(UIView *)view;
 @end
 
 NS_ASSUME_NONNULL_END
